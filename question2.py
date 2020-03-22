@@ -11,7 +11,18 @@ but the idea is that it should work properly for any given input.
 
 def f(l):
     ##########YOUR CODE HERE##########
-    pass
+    L1 = [0,-4,2,-3,6,-1,8,6]
+L3 = []
+L4 = []
+for x in L1:
+    if x%2 == 0:
+        L3.append(x)
+    else:
+        L4.append(x)
+def f(x):
+    return sum(L3)-sum(L4)
+
+print(f(x))
     ###########END CODE###############
 
 #Do not edit the code below
