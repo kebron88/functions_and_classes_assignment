@@ -18,7 +18,15 @@ but the idea is that it should work properly for any given input.
 
 def f(x1, y1, x2, y2):
     ##########YOUR CODE HERE##########
-    pass
+    m = (y2-y1)/(x2-x1)
+    b = y1-m*x1
+    return m,b
+
+x1 = 2
+x2 = 7
+y1 = 6
+y2 = 13
+print(f(x1, y1, x2, y2))
     ###########END CODE###############
 
 #Do not edit the code below
