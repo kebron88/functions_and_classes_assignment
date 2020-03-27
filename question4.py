@@ -7,8 +7,15 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 def f(l):
-    ##########YOUR CODE HERE##########
-    pass
+    a = sorted(l)
+    b = len(a)
+    if b%2 == 0:
+            return print((a[b//2]+a[b//2-1])/2)
+    else:
+            return (a[b//2])
+
+l = [5,21,14,9,13]
+print(f(l))
     ###########END CODE###############
 
 #Do not edit the code below
