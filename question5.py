@@ -15,15 +15,27 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 
-def f(l):
-    ##########YOUR CODE HERE##########
-    pass
+l=[9,10,10,3,3,4,8,4,1,5]
+def f():
+    m = sum(l)/len(l)
+    return m
+def d():
+    m=f()
+    sig=0
+    for x in l:
+        sig = sig+(x-m)**2
+    return sig
+
+def e():
+    return (d()/(len(l)-1))**(1/2)
+
+print(f(),e())
     ###########END CODE###############
 
 #Do not edit the code below
 if __name__ == '__main__':
     l = [round(x,4) for x in f([2,6,4,1,4,6,4,3,3,7,5,2,3,6,3,8])]
-    if l[0] == 4.1875 and l1 == 1.9738:
+    if l[0] == 4.1875 and l[1] == 1.9738:
         print('Test passed')
     else:
         print('Test failed, m = {} and sd = {} when they should have been 4.1875 and 1.9738'.format(str(l[0]), str(l[1])))
