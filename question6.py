@@ -9,9 +9,16 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 
-def f(s):
-    ##########YOUR CODE HERE##########
-    pass
+word = "PlayStation 5"
+def f():
+    z = ""
+    for x in word:
+        if x == x.upper():
+            z = z + x.lower()
+        elif x == x.lower():
+            z = z + x. upper()
+    return z
+print(f())
     ###########END CODE###############
 
 #Do not edit the code below
