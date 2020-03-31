@@ -10,7 +10,7 @@ but the idea is that it should work properly for any given input.
 """
 
 word = "PlayStation 5"
-def f():
+def f(word):
     z = ""
     for x in word:
         if x == x.upper():
@@ -18,7 +18,8 @@ def f():
         elif x == x.lower():
             z = z + x. upper()
     return z
-print(f())
+print(f(word))
+
     ###########END CODE###############
 
 #Do not edit the code below
