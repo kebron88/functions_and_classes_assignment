@@ -13,9 +13,26 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 
-def f(s):
-    ##########YOUR CODE HERE##########
-    pass
+string = "Life is like a box of chocolates. You never know what you are gonna get!"
+punc = [".","?","!",","]
+def f(string):
+    z = ""
+    for x in string:
+        if x in punc:
+            z = z + x.replace(x, "")
+        elif x == x.upper():
+            z = z + x.lower()
+        elif x == x.lower():
+            z = z + x
+    return z
+
+def d(string):
+    j = f(string).split(" ")
+    g = {}
+    for h in j:
+        g[h] = j.count(h)
+    return g
+print(d(string))
     ###########END CODE###############
 
 #Do not edit the code below
