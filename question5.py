@@ -16,20 +16,19 @@ but the idea is that it should work properly for any given input.
 """
 
 l=[9,10,10,3,3,4,8,4,1,5]
-def f():
+def f(l):
     m = sum(l)/len(l)
     return m
-def d():
-    m=f()
+def d(l):
     sig=0
     for x in l:
-        sig = sig+(x-m)**2
+        sig = sig+(x-f(l))**2
     return sig
 
-def e():
-    return (d()/(len(l)-1))**(1/2)
+def e(l):
+    return (d(l)/(len(l)-1))**(1/2)
 
-print(f(),e())
+print(f(l),e(l))
     ###########END CODE###############
 
 #Do not edit the code below
