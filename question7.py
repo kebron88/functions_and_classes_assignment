@@ -15,7 +15,7 @@ but the idea is that it should work properly for any given input.
 
 string = "Life is like a box of chocolates. You never know what you are gonna get!"
 punc = [".","?","!",","]
-def f(string):
+def d(string):
     z = ""
     for x in string:
         if x in punc:
@@ -26,13 +26,13 @@ def f(string):
             z = z + x
     return z
 
-def d(string):
-    j = f(string).split(" ")
+def f(string):
+    j = d(string).split(" ")
     g = {}
     for h in j:
         g[h] = j.count(h)
     return g
-print(d(string))
+print(f(string))
     ###########END CODE###############
 
 #Do not edit the code below
