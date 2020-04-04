@@ -12,9 +12,14 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 
-def f(path):
-    ##########YOUR CODE HERE##########
-    pass
+F = "text_text.txt"
+def f(F):
+    x = []
+    with open("test_text.txt","r") as k:
+        for line in k:
+            x.append(line.strip())
+        return x
+print(f(F))
     ###########END CODE###############
 
 #Do not edit the code below
