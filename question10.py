@@ -11,9 +11,16 @@ to the specific test case given. It is there to help you test whether your funct
 but the idea is that it should work properly for any given input.
 """
 
-def f(s1, s2):
-    ##########YOUR CODE HERE##########
-    pass
+from datetime import datetime
+s1 = "22:31:14"
+s2 = "23:12:40"
+
+def f(s1,s2):
+    do1 = datetime.strptime(s1, "%H:%M:%S")
+    do2 = datetime.strptime(s2, "%H:%M:%S")
+    do3 = do2-do1
+    return do3.total_seconds()
+print(f(s1,s2))
     ###########END CODE###############
 
 #Do not edit the code below
